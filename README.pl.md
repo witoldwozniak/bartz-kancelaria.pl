@@ -43,6 +43,26 @@ i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
 - **Waga.** Około 300 kB na stronę, w większości czcionki.
 - **Testy.** Przy każdej zmianie zestaw testów end-to-end sprawdza wszystkie
   dwadzieścia stron: dostępność, treść, nawigację, metadane SEO i pliki PDF.
-- **Utrzymanie.** Zmiany treści nie wymagają otwierania kodu: edycję
-  wprowadza agent AI, a testy ją weryfikują. Zmiana numeru telefonu czy
-  jednego zdania zajmuje kilka sekund.
+- **Utrzymanie.** Klientka nie chciała sama zarządzać stroną, więc nie ma
+  panelu administracyjnego; stronę utrzymuję ja. Zmiany treści nie wymagają
+  otwierania kodu: edycję wprowadza agent AI, a testy ją weryfikują. Zmiana
+  numeru telefonu czy jednego zdania zajmuje kilka sekund.
+
+## Przebieg
+
+- **Punkt wyjścia.** Poprzednią stronę (wyżej, czerwiec 2025) wykonała inna
+  firma, w pakiecie z abonamentem na hosting i utrzymanie, który kosztował
+  więcej, niż strona wymagała. Zaproponowałem nowy projekt i rezygnację z tego
+  abonamentu.
+- **Brief.** Wywiad projektowy w lipcu 2026 roku określił dwóch odbiorców, ton
+  i listę rzeczy, których na stronie nie będzie: Temidy, młotków, zdjęć
+  stockowych, obietnic wyniku ani wyskakujących okien.
+- **Projekt i teksty.** Klientka dała mi pełną swobodę w projekcie
+  i w większości tekstów. Jej własne teksty ze starej strony zostały, poprawiona jest tylko
+  typografia.
+- **Akceptacja.** Nowe teksty omówiliśmy zdanie po zdaniu. Ostateczne
+  brzmienie, z jej poprawkami, zatwierdziła we wrześniu 2026 roku. Do tego
+  czasu podgląd strony był dostępny tylko po zalogowaniu.
+- **Hosting.** Strona tymczasowo działa bezpłatnie na Cloudflare Pages.
+  Domena, hosting i poczta przechodzą do jednego dostawcy, tańszego i z lepszym
+  wsparciem.

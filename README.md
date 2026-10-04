@@ -44,6 +44,25 @@ legal counsel.
 - **Testing.** An end-to-end test suite runs on every push and checks all
   twenty pages for accessibility, content, navigation, SEO metadata and the
   PDFs.
-- **Maintenance.** Content changes do not require opening the code: an AI
-  agent makes the edit and the test suite verifies it. Updating a phone number
-  or a sentence takes seconds.
+- **Maintenance.** The client chose not to manage the site herself, so there
+  is no admin panel; I maintain it. Content changes do not require opening the
+  code: an AI agent makes the edit and the test suite verifies it. Updating a
+  phone number or a sentence takes seconds.
+
+## Process
+
+- **Starting point.** The previous site, shown above as June 2025, was built by
+  another company and came with a hosting and maintenance plan that cost more
+  than the site needed. I offered to redesign it and move her off that plan.
+- **Brief.** A design interview in July 2026 set the two readers, the tone, and
+  a list of things the site must never contain: no Lady Justice, gavels or
+  stock photos, no promises of results, no pop-ups.
+- **Design and copy.** The client gave me full control over the design and
+  most of the copy. Her own texts from the old site were kept with only
+  typographic corrections.
+- **Approval.** New copy was reviewed with her sentence by sentence. She
+  approved the final wording, with her own corrections, in September 2026.
+  Until then, the preview was behind a login.
+- **Hosting.** The site is on Cloudflare Pages for now, at no cost. The
+  domain, hosting and e-mail are moving to a single provider that costs less
+  and offers better support.
