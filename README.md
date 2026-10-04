@@ -32,6 +32,8 @@ legal counsel.
 
 ## Results
 
+<img src="screenshots/after-mobile.jpg" alt="The site on a phone, October 2026" width="220" align="right">
+
 - **No JavaScript.** Twenty pages of static HTML and one stylesheet.
 - **Accessibility.** Text contrast meets WCAG AAA (7:1).
 - **Mediation documents.** The eight documents used in her mediations, each

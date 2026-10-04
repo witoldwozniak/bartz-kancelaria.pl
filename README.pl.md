@@ -30,6 +30,8 @@ i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
 
 ## Rezultaty
 
+<img src="screenshots/after-mobile.jpg" alt="Strona na telefonie, październik 2026" width="220" align="right">
+
 - **Bez JavaScriptu.** Dwadzieścia stron statycznego HTML-a i jeden arkusz
   stylów.
 - **Dostępność.** Kontrast tekstu spełnia WCAG AAA (7:1).
