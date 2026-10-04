@@ -2,8 +2,8 @@
 
 # bartz-kancelaria.pl
 
-A website for a one-person law practice in Płock, Poland. Designed, built and
-looked after by Witold Woźniak.
+Website of Kancelaria Radcy Prawnego Justyna Bartz, a one-person law practice
+in Płock, Poland. Design, development and maintenance: Witold Woźniak.
 
 **[bartz-kancelaria.pl →](https://bartz-kancelaria.pl)**
 
@@ -13,38 +13,37 @@ looked after by Witold Woźniak.
 
 ## The brief
 
-The client is my mother. Justyna Bartz is a radca prawny (a Polish legal
-counsel) and a mediator on the Płock regional court's list. She was a judge
-for ten years before opening her own practice in 2008.
+The client is my mother, Justyna Bartz: a radca prawny (Polish legal counsel)
+and a permanent mediator on the list of the President of the Regional Court in
+Płock. She served as a judge for ten years and has run her own practice since
+2008.
 
-The site has two readers:
+The site serves two readers:
 
-- **Someone in trouble.** A divorce, a death in the family, a dispute. Often
-  it's their first time with a lawyer, and they're reading on a phone in the
-  evening. The site's one job is to get them to call or write.
-- **An institution** checking her out before signing a contract. It needs to
-  see a serious practice.
+- **A private client**, often seeing a lawyer for the first time about a
+  divorce, an inheritance or a dispute, and usually reading on a phone. The
+  site's purpose is to make it easy for them to call or write.
+- **An institution** verifying the practice before signing a contract. For
+  them, the site has to present a credible, professional practice.
 
-She threw out my first headline as "more life coach than lawyer", and she was
-right: not one word of it could be checked. That set the rule for every
-sentence on the site: it stays only if you can check that it's true. No
-slogans, no promised outcomes. The profession's ethics rules ask for the same.
+Every statement on the site must be verifiable. The site makes no promises of
+outcome and uses no slogans, in line with the professional ethics rules for
+legal counsel.
 
-## What came out of it
+## Results
 
-- **No JavaScript.** Twenty pages of plain HTML and one stylesheet. Nothing to
-  load, nothing to break, nothing to track.
-- **Readable for everyone.** Text contrast meets WCAG AAA (7:1). Every page
-  gets an automated accessibility scan on every push, and a failure turns the
-  build red.
-- **Her mediation paperwork, online.** The eight documents she uses in
-  mediation, each as a web page with a filled-in example and a print-ready PDF
-  made from the same text. Four of the PDFs are forms you can fill in on a
-  computer.
-- **No cookies, no tracking.** The fonts are self-hosted, and the map is drawn
-  from OpenStreetMap data and served as a plain image, so no visitor data goes
-  to Google. Her privacy page can say so truthfully.
-- **Light.** About 300 kB per page, most of it the two typefaces.
-- **Cheap to look after.** For a content change I don't need to open the code:
-  I tell an AI agent what to change, the tests check it, and it's done. A new
-  price or phone number takes seconds of my time.
+- **No JavaScript.** Twenty pages of static HTML and one stylesheet.
+- **Accessibility.** Text contrast meets WCAG AAA (7:1).
+- **Mediation documents.** The eight documents used in her mediations, each
+  published as a web page with a completed example and as a print-ready PDF
+  generated from the same source. Four of the PDFs are fillable forms.
+- **Privacy.** No cookies and no tracking. Fonts are served with the site, and
+  the map is drawn from OpenStreetMap data and served as a static image. Pages
+  load nothing from other domains.
+- **Page weight.** About 300 kB per page, most of it fonts.
+- **Testing.** An end-to-end test suite runs on every push and checks all
+  twenty pages for accessibility, content, navigation, SEO metadata and the
+  PDFs.
+- **Maintenance.** Content changes do not require opening the code: an AI
+  agent makes the edit and the test suite verifies it. Updating a phone number
+  or a sentence takes seconds.

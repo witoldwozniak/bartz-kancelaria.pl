@@ -2,8 +2,8 @@
 
 # bartz-kancelaria.pl
 
-Strona internetowa jednoosobowej kancelarii w Płocku. Projekt, wykonanie
-i opieka: Witold Woźniak.
+Strona internetowa Kancelarii Radcy Prawnego Justyny Bartz, jednoosobowej
+kancelarii w Płocku. Projekt, wykonanie i utrzymanie: Witold Woźniak.
 
 **[bartz-kancelaria.pl →](https://bartz-kancelaria.pl)**
 
@@ -13,39 +13,36 @@ i opieka: Witold Woźniak.
 
 ## Zadanie
 
-Klientką jest moja mama. Justyna Bartz jest radcą prawnym i stałą mediatorką
-z listy Prezesa Sądu Okręgowego w Płocku. Przez dziesięć lat orzekała jako
-sędzia, a w 2008 roku otworzyła własną kancelarię.
+Klientką jest moja mama, Justyna Bartz: radca prawny i stała mediatorka z listy
+Prezesa Sądu Okręgowego w Płocku. Przez dziesięć lat orzekała jako sędzia, a od
+2008 roku prowadzi własną kancelarię.
 
-Strona ma dwóch czytelników:
+Strona ma dwóch odbiorców:
 
-- **Ktoś w kłopocie.** Rozwód, śmierć bliskiej osoby, spór. Często pierwszy
-  raz u prawnika, czyta z telefonu, wieczorem. Strona ma jedno zadanie: żeby
-  zadzwonił albo napisał.
-- **Instytucja**, która sprawdza kancelarię przed podpisaniem umowy. Ma
-  zobaczyć poważną kancelarię.
+- **Klient indywidualny**, często pierwszy raz u prawnika, w sprawie rozwodu,
+  spadku albo sporu, zwykle czytający na telefonie. Strona ma mu ułatwić
+  telefon albo wiadomość.
+- **Instytucja**, która sprawdza kancelarię przed podpisaniem umowy. Dla niej
+  strona ma przedstawić wiarygodną, profesjonalną kancelarię.
 
-Mój pierwszy nagłówek odrzuciła jako „bardziej coach niż radca” i miała rację:
-żadnego słowa w nim nie dało się sprawdzić. Stąd zasada dla każdego zdania na
-stronie: zostaje tylko, jeśli da się sprawdzić, że jest prawdziwe. Żadnych
-haseł, żadnych obietnic wyniku. Tego samego wymaga etyka zawodowa.
+Każde zdanie na stronie musi dać się sprawdzić. Strona nie obiecuje wyników
+i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
 
-## Co z tego wyszło
+## Rezultaty
 
-- **Zero JavaScriptu.** Dwadzieścia stron czystego HTML-a i jeden arkusz
-  stylów. Nic się nie doładowuje, nic się nie psuje, nic nie śledzi.
-- **Czytelna dla każdego.** Kontrast tekstu spełnia WCAG AAA (7:1). Każda
-  strona przechodzi automatyczny test dostępności przy każdej zmianie, a błąd
-  oznacza czerwony build.
-- **Dokumenty mediacyjne online.** Osiem dokumentów, których używa
-  w mediacjach. Każdy jako strona z wypełnionym przykładem i PDF do druku,
-  powstały z tego samego tekstu. Cztery z tych PDF-ów to formularze do
+- **Bez JavaScriptu.** Dwadzieścia stron statycznego HTML-a i jeden arkusz
+  stylów.
+- **Dostępność.** Kontrast tekstu spełnia WCAG AAA (7:1).
+- **Dokumenty mediacyjne.** Osiem dokumentów używanych w jej mediacjach. Każdy
+  jest opublikowany jako strona z wypełnionym przykładem i jako PDF do druku,
+  generowany z tego samego źródła. Cztery z tych PDF-ów to formularze do
   wypełnienia na komputerze.
-- **Bez ciasteczek, bez śledzenia.** Czcionki są na naszym serwerze, a mapa
-  jest narysowana z danych OpenStreetMap i podana jako zwykły obrazek, więc
-  żadne dane odwiedzających nie trafiają do Google. Polityka prywatności może
-  to uczciwie napisać.
-- **Lekka.** Około 300 kB na stronę, głównie dwa kroje pisma.
-- **Tania w utrzymaniu.** Przy zmianie treści nie muszę nawet zaglądać do
-  kodu: mówię agentowi AI, co zmienić, testy to sprawdzają i gotowe. Nowa cena
-  czy numer telefonu to kilka sekund mojej pracy.
+- **Prywatność.** Bez ciasteczek i bez śledzenia. Czcionki są serwowane razem
+  ze stroną, a mapa jest narysowana z danych OpenStreetMap i podana jako
+  statyczny obraz. Strony nie pobierają niczego z innych domen.
+- **Waga.** Około 300 kB na stronę, w większości czcionki.
+- **Testy.** Przy każdej zmianie zestaw testów end-to-end sprawdza wszystkie
+  dwadzieścia stron: dostępność, treść, nawigację, metadane SEO i pliki PDF.
+- **Utrzymanie.** Zmiany treści nie wymagają otwierania kodu: edycję
+  wprowadza agent AI, a testy ją weryfikują. Zmiana numeru telefonu czy
+  jednego zdania zajmuje kilka sekund.
