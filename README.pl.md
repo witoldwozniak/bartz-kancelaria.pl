@@ -66,3 +66,45 @@ i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
 - **Hosting.** Strona tymczasowo działa bezpłatnie na Cloudflare Pages.
   Domena, hosting i poczta przechodzą do jednego dostawcy, tańszego i z lepszym
   wsparciem.
+
+## Decyzje techniczne
+
+- **Astro zamiast Nuxta.** Pierwsza wersja, którą zbudowałem, działała na
+  Nuxcie. Zmierzona na wyniku builda, wysyłała 320 kB JavaScriptu (po
+  kompresji gzip) przy każdym wczytaniu strony. Jedynym interaktywnym
+  elementem było menu na telefonie, a nowy projekt usunął i to. Pierwotny plan
+  zakładał pozostanie przy Nuxcie; pomiary go zmieniły. Wersja na Astro nie
+  wysyła JavaScriptu, ma 5 zależności produkcyjnych zamiast 17 i buduje się
+  w niecałą sekundę.
+- **Spisany system projektowy.** Każdy kolor, rozmiar i odstęp pochodzi
+  z jednego arkusza tokenów. Kolory tekstu dobrano tak, by osiągały kontrast
+  7:1 na jedynym tle strony, więc kontrast nie może przejść na jednej
+  powierzchni, a nie przejść na innej.
+- **Jedno źródło dla każdego dokumentu.** Każdy dokument mediacyjny to plik
+  Markdown z własnymi znacznikami formularza (pole, kratka, podpis),
+  renderowanymi przez niewielką wtyczkę Markdown. PDF drukuje ze strony
+  Chromium w trybie headless. W formularzach do wypełnienia skrypt mierzy,
+  gdzie każde puste pole wypadło w wydrukowanym PDF-ie, i dokładnie tam
+  umieszcza pole formularza. Każdy PDF zapisuje skrót (hash) swojego źródła,
+  a CI nie przechodzi, jeśli dokument zmieniono, a PDF-u nie wygenerowano od
+  nowa.
+- **Testy, które potrafią nie przejść.** axe-core skanuje każdą stronę. Cele
+  dotykowe są mierzone względem minimum 48 px. Test PDF-ów sprawdza
+  w emulacji druku, że żaden przykładowy tekst nie trafia na papier. Lista
+  adresów jest pisana ręcznie, więc strona, która przestanie się renderować,
+  nie wypadnie po cichu z testów. Po każdej zmianie bramki dostępności jest
+  ona celowo psuta, żeby sprawdzić, że nadal zgłasza błąd.
+- **Prywatność wbudowana w konstrukcję.** Czcionki są serwowane ze strony.
+  Mapę rysuje skrypt w Pythonie z danych OpenStreetMap do pliku SVG, który po
+  kompresji gzip waży 14 kB, a podpisy na niej to zwykły tekst HTML. Polityka
+  bezpieczeństwa treści (CSP) to `default-src 'none'`, bez żadnego źródła
+  skryptów. Statyczna mapa Google odpadła, bo jej warunki wymagają ładowania
+  jej z serwerów Google w przeglądarce odwiedzającego.
+- **Repozytorium, w którym może pracować agent AI.** Konwencje są spisane dla
+  agenta. Zmienne dane są w jednym pliku, a teksty w Markdownie, więc rutynowe
+  zmiany trafiają w przewidywalne miejsca, a testy wyłapują błędy.
+
+**Stos:** Astro 7 · Tailwind CSS v4 · TypeScript · Playwright + axe-core ·
+Biome · Bun · GitHub Actions · Cloudflare Pages
+
+Kod źródłowy jest prywatny.

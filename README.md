@@ -66,3 +66,41 @@ legal counsel.
 - **Hosting.** The site is on Cloudflare Pages for now, at no cost. The
   domain, hosting and e-mail are moving to a single provider that costs less
   and offers better support.
+
+## Engineering decisions
+
+- **Astro instead of Nuxt.** The first version I built ran on Nuxt. Measured on
+  its build output, it sent 320 kB of JavaScript (gzipped) on every page load.
+  The only interactive element was a mobile menu, and the redesign removed even
+  that. The first plan was to keep Nuxt; the measurements reversed it. The
+  Astro rebuild sends no JavaScript, has 5 runtime dependencies instead of 17,
+  and builds in under a second.
+- **A written design system.** Every colour, size and spacing value comes from
+  one token sheet. Text colours were chosen to clear 7:1 against the site's
+  single background, so contrast cannot pass on one surface and fail on
+  another.
+- **One source per document.** Each mediation document is a Markdown file with
+  custom form tokens (blank, checkbox, signature), rendered by a small Markdown
+  plugin. Headless Chromium prints the PDF from the page. For fillable forms, a
+  script measures where each blank landed in the printed PDF and places a form
+  field exactly there. Each PDF records a hash of its source, and CI fails if a
+  document changed but its PDF was not regenerated.
+- **Tests that can fail.** axe-core scans every page. Touch targets are
+  measured against a 48 px minimum. The PDF check confirms under print
+  emulation that no sample text reaches paper. The route list is written by
+  hand, so a page that stops rendering cannot quietly drop out of the tests.
+  After any change to the accessibility gate, it is broken on purpose to prove
+  it still goes red.
+- **Privacy by construction.** Fonts are self-hosted. The map is drawn by a
+  Python script from OpenStreetMap data into an SVG of 14 kB gzipped, with
+  labels as real HTML text. The Content Security Policy is `default-src
+  'none'` with no script source at all. A Google static map was ruled out
+  because its terms require loading it from Google in the visitor's browser.
+- **A repository an AI agent can work in.** Conventions are documented for the
+  agent. Changeable facts sit in one data file and prose in Markdown, so
+  routine edits land in predictable places and the tests catch mistakes.
+
+**Stack:** Astro 7 · Tailwind CSS v4 · TypeScript · Playwright + axe-core ·
+Biome · Bun · GitHub Actions · Cloudflare Pages
+
+The source code is private.
