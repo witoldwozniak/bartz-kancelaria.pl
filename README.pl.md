@@ -30,8 +30,6 @@ i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
 
 ## Rezultaty
 
-<img src="screenshots/after-mobile.jpg" alt="Strona na telefonie, październik 2026" width="220" align="right">
-
 - **Bez JavaScriptu.** Dwadzieścia stron statycznego HTML-a i jeden arkusz
   stylów.
 - **Dostępność.** Kontrast tekstu spełnia WCAG AAA (7:1).
@@ -49,6 +47,8 @@ i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
   panelu administracyjnego; stronę utrzymuję ja. Zmiany treści nie wymagają
   otwierania kodu: edycję wprowadza agent AI, a testy ją weryfikują. Zmiana
   numeru telefonu czy jednego zdania zajmuje kilka sekund.
+
+<p align="center"><img src="screenshots/after-mobile.jpg" alt="Strona na telefonie, październik 2026" width="260"></p>
 
 ## Przebieg
 
