@@ -25,7 +25,7 @@ Strona ma dwóch czytelników:
 - **Instytucja**, która sprawdza kancelarię przed podpisaniem umowy. Ma
   zobaczyć poważną kancelarię.
 
-Mój pierwszy nagłówek odrzuciła jako „bardziej coach niż radca" i miała rację:
+Mój pierwszy nagłówek odrzuciła jako „bardziej coach niż radca” i miała rację:
 żadnego słowa w nim nie dało się sprawdzić. Stąd zasada dla każdego zdania na
 stronie: zostaje tylko, jeśli da się sprawdzić, że jest prawdziwe. Żadnych
 haseł, żadnych obietnic wyniku. Tego samego wymaga etyka zawodowa.
