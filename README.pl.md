@@ -46,5 +46,6 @@ haseł, żadnych obietnic wyniku. Tego samego wymaga etyka zawodowa.
   żadne dane odwiedzających nie trafiają do Google. Polityka prywatności może
   to uczciwie napisać.
 - **Lekka.** Około 300 kB na stronę, głównie dwa kroje pisma.
-- **Tania w utrzymaniu.** Zmiana ceny czy numeru telefonu to jedna linijka,
-  którą agent AI może bezpiecznie wprowadzić, a resztą zajmują się testy.
+- **Tania w utrzymaniu.** Przy zmianie treści nie muszę nawet zaglądać do
+  kodu: mówię agentowi AI, co zmienić, testy to sprawdzają i gotowe. Nowa cena
+  czy numer telefonu to kilka sekund mojej pracy.

@@ -45,5 +45,6 @@ slogans, no promised outcomes. The profession's ethics rules ask for the same.
   from OpenStreetMap data and served as a plain image, so no visitor data goes
   to Google. Her privacy page can say so truthfully.
 - **Light.** About 300 kB per page, most of it the two typefaces.
-- **Cheap to look after.** Changing a price or a phone number is a one-line
-  edit an AI agent can make safely, and the tests guard everything else.
+- **Cheap to look after.** For a content change I don't need to open the code:
+  I tell an AI agent what to change, the tests check it, and it's done. A new
+  price or phone number takes seconds of my time.
