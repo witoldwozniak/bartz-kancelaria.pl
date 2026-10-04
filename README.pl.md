@@ -108,3 +108,10 @@ i nie używa haseł reklamowych, zgodnie z zasadami etyki radcy prawnego.
 Biome · Bun · GitHub Actions · Cloudflare Pages
 
 Kod źródłowy jest prywatny.
+
+## Kontakt
+
+Witold Woźniak
+
+- E-mail: [witold@witoldwozniak.dev](mailto:witold@witoldwozniak.dev)
+- LinkedIn: [linkedin.com/in/witold-wozniak](https://www.linkedin.com/in/witold-wozniak/)

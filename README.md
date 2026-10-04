@@ -104,3 +104,10 @@ legal counsel.
 Biome · Bun · GitHub Actions · Cloudflare Pages
 
 The source code is private.
+
+## Contact
+
+Witold Woźniak
+
+- E-mail: [witold@witoldwozniak.dev](mailto:witold@witoldwozniak.dev)
+- LinkedIn: [linkedin.com/in/witold-wozniak](https://www.linkedin.com/in/witold-wozniak/)
